@@ -38,13 +38,21 @@ map <Leader>ob :Bufers<cr>
 "nnoremap N Nzzzv
 "nnoremap J mzJ`z
 
+" Create a blank space
+nnoremap <Leader>o O<Esc>o
+
 " Moving text
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
 nnoremap <Leader>k :m .-2<CR>==
 nnoremap <Leader>j :m .+1<CR>==
 
-" Remap keys for gotos
+" Copy line text
+vnoremap <C-j> dPP<Esc>
+"vnoremap <C-k> :m '<-2<CR>gv=gv
+nmap <A-j> ddPP
+
+"Remap keys for gotos
 nmap <silent> gd <Plug>(coc-definition)
 nmap <silent> gy <Plug>(coc-type-definition)
 nmap <silent> gi <Plug>(coc-implementation)

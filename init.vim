@@ -11,6 +11,7 @@ set showmatch
 set termguicolors
 set sw=2
 set relativenumber
+set noshowmode
 
 so C:\Users\DELL\AppData\Local\nvim\plugins.vim
 so C:\Users\DELL\AppData\Local\nvim\plugin-config.vim
